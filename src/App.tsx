@@ -273,60 +273,60 @@ export function App() {
           </FlipPage>
           
           {/* ══════════════════ PAGE 2 — INSIDE FRONT COVER (Clean White Endpaper) ══════════════════ */}
-          <FlipPage className="p-8 bg-slate-50 text-slate-900 page-left flex flex-col justify-between border-r border-slate-200 select-none">
-            <div className="flex justify-between items-center border-b border-slate-300 pb-3">
-              <span className="text-xs uppercase font-bold text-slate-500 tracking-wider">AZAD ZINDAGI FOUNDATION</span>
-              <span className="text-xs uppercase font-bold text-slate-500">INSIDE COVER</span>
+          <FlipPage className="p-7 bg-slate-50 text-slate-900 page-left flex flex-col justify-between border-r border-slate-200 select-none">
+            <div className="flex justify-between items-center border-b border-slate-300 pb-2">
+              <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">AZAD ZINDAGI FOUNDATION</span>
+              <span className="text-[10px] uppercase font-bold text-slate-500">INSIDE COVER</span>
             </div>
 
-            <div className="text-center my-auto flex flex-col items-center justify-center py-6">
-              <div className="w-24 h-24 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center p-3 mb-5 shadow-sm">
+            <div className="text-center my-auto flex flex-col items-center justify-center py-4">
+              <div className="w-20 h-20 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center p-3 mb-4 shadow-sm">
                 <img src="/images/cover/logo-updated.png" className="w-full h-full object-contain opacity-90" alt=""/>
               </div>
-              <h3 className="font-serif-title text-lg font-bold text-slate-900 tracking-wide mb-2 uppercase">
+              <h3 className="font-serif-title text-base font-bold text-slate-900 tracking-wide mb-1 uppercase">
                 AZAD ZINDAGI FOUNDATION
               </h3>
-              <p className="text-xs text-orange-600 font-bold uppercase tracking-wider mb-4">
+              <p className="text-xs text-orange-600 font-bold uppercase tracking-wider mb-3">
                 A Section 8 Non-Profit Organization
               </p>
-              <div className="w-16 h-0.5 bg-slate-300 mx-auto mb-4"></div>
+              <div className="w-12 h-0.5 bg-slate-300 mx-auto mb-3"></div>
               <p className="text-xs text-slate-700 max-w-xs leading-relaxed italic font-medium">
                 "Dedicated to the rescue, protection, legal rehabilitation, and social reintegration of trafficked, missing, and vulnerable children across Maharashtra and India."
               </p>
             </div>
 
-            <div className="border-t border-slate-300 pt-3 text-[10px] text-slate-500 font-medium flex justify-between items-center">
+            <div className="border-t border-slate-300 pt-2 text-[10px] text-slate-500 font-medium flex justify-between items-center">
               <span>CIN: U88900MH2025NPL458914</span>
               <span>Page 02</span>
             </div>
           </FlipPage>
 
           {/* ══════════════════ PAGE 3 — FOREWORD ══════════════════ */}
-          <FlipPage className="p-8 page-right text-slate-900">
+          <FlipPage className="p-7 page-right text-slate-900">
             <div className="flex flex-col h-full">
               <PageHeader left="Azad Zindagi Foundation" right="Foreword"/>
-              <div className="flex-1 flex flex-col justify-between py-4">
+              <div className="flex-1 flex flex-col justify-between py-3">
                 <div>
-                  <div className="inline-block bg-orange-100 text-orange-800 text-xs font-bold px-2.5 py-1 rounded-full mb-3">Executive Summary</div>
-                  <h2 className="text-2xl font-black text-slate-900 mb-3 tracking-tight">Protecting Innocence, Building Hope</h2>
-                  <p className="text-xs sm:text-sm italic font-medium text-slate-800 mb-4 border-l-4 border-orange-500 pl-3 leading-relaxed bg-orange-50/50 py-1">
+                  <div className="inline-block bg-orange-100 text-orange-800 text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">Executive Summary</div>
+                  <h2 className="text-xl font-black text-slate-900 mb-2 tracking-tight">Protecting Innocence, Building Hope</h2>
+                  <p className="text-xs italic font-medium text-slate-800 mb-3 border-l-3 border-orange-500 pl-3 leading-relaxed bg-orange-50/50 py-1" style={{borderLeftWidth:"3px"}}>
                     "Every child expects an Azad Zindagi (Free Life), and it is everyone's responsibility to make it happen."
                   </p>
-                  <p className="text-xs sm:text-xs text-slate-800 leading-relaxed font-normal mb-3">
+                  <p className="text-[11px] text-slate-800 leading-relaxed font-normal mb-2">
                     The Right to Protection is guaranteed under the UN Convention on the Rights of the Child (UNCRC) and strongly upheld in India through laws like POCSO and the Juvenile Justice Act. Yet across railway stations, bus terminals, and trafficking corridors, thousands of children face daily exploitation.
                   </p>
-                  <p className="text-xs sm:text-xs text-slate-800 leading-relaxed font-normal mb-3">
+                  <p className="text-[11px] text-slate-800 leading-relaxed font-normal mb-2">
                     Prior to formal incorporation under Section 8 of the Companies Act, 2013 on October 13, 2025, our core team operated on the ground since 2019, sustained by unwavering community support. This 32-page dossier chronicles the transformation of over 33,969 children and outlines our roadmap for 2026–2030.
                   </p>
-                  <p className="text-xs sm:text-xs text-slate-800 leading-relaxed font-normal mb-3">
+                  <p className="text-[11px] text-slate-800 leading-relaxed font-normal mb-2">
                     From the railway platforms of Virar and Palghar to remote villages across Maharashtra, Bihar, Uttar Pradesh, and West Bengal, our field investigators have worked alongside Anti-Human Trafficking Units (AHTU), the Railway Protection Force (RPF), and Child Welfare Committees (CWC) to rescue, rehabilitate, and reintegrate vulnerable children.
                   </p>
                 </div>
-                <div className="space-y-2">
-                  <div className="bg-orange-50 border-l-4 border-orange-500 p-3 rounded text-xs text-orange-950 font-medium">
+                <div className="space-y-1.5">
+                  <div className="bg-orange-50 border-l-3 border-orange-500 p-2.5 rounded text-[11px] text-orange-950 font-medium" style={{borderLeftWidth:"3px"}}>
                     <strong>24/7 Childline Support:</strong> Toll-free <strong>1098</strong> for immediate distress response. Our trained field officers are available at all hours across Western Railway transit corridors.
                   </div>
-                  <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded text-xs text-blue-950 font-medium">
+                  <div className="bg-blue-50 border-l-3 border-blue-500 p-2.5 rounded text-[11px] text-blue-950 font-medium" style={{borderLeftWidth:"3px"}}>
                     <strong>Operational Since:</strong> 2019 (Pre-incorporation). Formally registered as Section 8 company on 13th October 2025 with the Ministry of Corporate Affairs, Government of India.
                   </div>
                 </div>
@@ -336,14 +336,14 @@ export function App() {
           </FlipPage>
 
           {/* ══════════════════ PAGE 4 — TABLE OF CONTENTS ══════════════════ */}
-          <FlipPage className="p-8 page-left text-slate-900">
+          <FlipPage className="p-7 page-left text-slate-900">
             <div className="flex flex-col h-full">
               <PageHeader left="Contents" right="Complete 32-Page Directory"/>
               <div className="flex-1 flex flex-col justify-between py-3">
                 <div>
-                  <h2 className="text-xl font-black text-slate-900 mb-1 border-b-2 border-orange-500 inline-block pb-0.5">Table of Contents</h2>
-                  <p className="text-xs text-slate-600 mb-3 font-medium">Navigate through our 32-page comprehensive annual publication:</p>
-                  <div className="space-y-1 text-xs">
+                  <h2 className="text-lg font-black text-slate-900 mb-1 border-b-2 border-orange-500 inline-block pb-0.5">Table of Contents</h2>
+                  <p className="text-[11px] text-slate-600 mb-2 font-medium">Navigate through our 32-page comprehensive annual publication:</p>
+                  <div className="space-y-1 text-[11px]">
                     {[
                       {l:"01",t:"Front Cover — Impact at a Glance",p:0},
                       {l:"02",t:"Inside Front Cover — Publication Info",p:1},
@@ -369,12 +369,12 @@ export function App() {
                     ].map((r,i) => (
                       <div key={i} className="flex justify-between bg-slate-50 hover:bg-orange-50 p-1 rounded cursor-pointer transition-colors border border-slate-100" onClick={()=>goToPage(r.p)}>
                         <span className="font-medium text-slate-800"><strong className="text-orange-600">{r.l}</strong> {r.t}</span>
-                        <span className="text-slate-500 font-mono text-[10px] bg-white px-1.5 py-0.5 rounded border border-slate-200 font-bold">P.{r.l}</span>
+                        <span className="text-slate-500 font-mono text-[9.5px] bg-white px-1.5 py-0.5 rounded border border-slate-200 font-bold">P.{r.l}</span>
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="bg-slate-100 p-2.5 rounded text-xs text-slate-700 font-medium border border-slate-200">
+                <div className="bg-slate-100 p-2 rounded text-[10.5px] text-slate-700 font-medium border border-slate-200 mt-2">
                   <strong>Reading Tip:</strong> Click any row above to jump directly to that section. Use navigation arrows or click corners to flip spreads cleanly.
                 </div>
               </div>
@@ -383,34 +383,34 @@ export function App() {
           </FlipPage>
 
           {/* ══════════════════ PAGE 5 — VISION & MISSION ══════════════════ */}
-          <FlipPage className="p-8 page-right text-slate-900">
+          <FlipPage className="p-7 page-right text-slate-900">
             <div className="flex flex-col h-full">
               <PageHeader left="Identity" right="Vision & Mission"/>
               <div className="flex-1 flex flex-col justify-between py-3">
                 <div>
-                  <h2 className="text-xl font-black text-slate-900 mb-3">Our Guiding Light</h2>
-                  <div className="bg-gradient-to-br from-orange-50 to-amber-50 border-l-4 border-orange-500 p-4 rounded mb-4 shadow-sm">
-                    <div className="text-xs font-bold text-orange-950 mb-1">🔭 VISION</div>
-                    <p className="text-xs sm:text-xs text-orange-950 font-medium leading-relaxed">
+                  <h2 className="text-lg font-black text-slate-900 mb-2">Our Guiding Light</h2>
+                  <div className="bg-gradient-to-br from-orange-50 to-amber-50 border-l-3 border-orange-500 p-3 rounded mb-3 shadow-sm" style={{borderLeftWidth:"3px"}}>
+                    <div className="text-[11px] font-bold text-orange-950 mb-1">🔭 VISION</div>
+                    <p className="text-[11px] text-orange-950 font-medium leading-relaxed">
                       "To see trafficked and missing children assisted, the vulnerable protected, captives set free, and the oppressed experiencing hope and healing as neighbours are transformed."
                     </p>
                   </div>
-                  <div className="bg-gradient-to-br from-emerald-50 to-teal-50 border-l-4 border-emerald-500 p-4 rounded mb-4 shadow-sm">
-                    <div className="text-xs font-bold text-emerald-950 mb-1">🎯 MISSION</div>
-                    <p className="text-xs sm:text-xs text-emerald-950 font-medium leading-relaxed">
+                  <div className="bg-gradient-to-br from-emerald-50 to-teal-50 border-l-3 border-emerald-500 p-3 rounded mb-3 shadow-sm" style={{borderLeftWidth:"3px"}}>
+                    <div className="text-[11px] font-bold text-emerald-950 mb-1">🎯 MISSION</div>
+                    <p className="text-[11px] text-emerald-950 font-medium leading-relaxed">
                       "To mobilize communities, financial partners, and all segments of society towards ending human trafficking and creating new futures through community-based action."
                     </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-slate-900 mb-2">About Azad Zindagi</h3>
-                  <p className="text-xs text-slate-800 leading-relaxed mb-3">
+                  <h3 className="text-xs font-bold text-slate-900 mb-1.5">About Azad Zindagi</h3>
+                  <p className="text-[11px] text-slate-800 leading-relaxed mb-2">
                     Azad Zindagi Foundation affirms that every child's life is sacred. A collective of social workers, legal advocates, educators, and trained field investigators united under a single imperative: safeguard rights, restore dignity, and ensure zero child abandonment across transit hubs and vulnerable communities.
                   </p>
-                  <p className="text-xs text-slate-800 leading-relaxed mb-3">
+                  <p className="text-[11px] text-slate-800 leading-relaxed mb-2">
                     Our name, "Azad Zindagi" (Free Life), captures our conviction that freedom from exploitation, trafficking, and abuse is not a privilege but a fundamental right of every child born in India and across the world.
                   </p>
-                  <div className="bg-slate-100 border border-slate-200 rounded p-3 text-xs text-slate-700 font-medium">
+                  <div className="bg-slate-100 border border-slate-200 rounded p-2.5 text-[10.5px] text-slate-700 font-medium">
                     <strong>Legal Entity:</strong> Incorporated as a Section 8 Company under the Companies Act, 2013 (Ministry of Corporate Affairs, Government of India). Active since 2019 as a grassroots initiative.
                   </div>
                 </div>
@@ -419,15 +419,15 @@ export function App() {
             </div>
           </FlipPage>
 
-          {/* ══════════════════ PAGE 5 — CORE VALUES ══════════════════ */}
-          <FlipPage className="p-7 page-right">
+          {/* ══════════════════ PAGE 6 — CORE VALUES ══════════════════ */}
+          <FlipPage className="p-7 page-left text-slate-900">
             <div className="flex flex-col h-full">
               <PageHeader left="Ethos" right="5 Core Values"/>
               <div className="flex-1 flex flex-col justify-between py-3">
                 <div>
-                  <h2 className="text-lg font-bold text-slate-900 mb-2">Our Non-Negotiable Principles</h2>
-                  <p className="text-[11px] text-slate-600 mb-3">Every action and field intervention is anchored by five core values that define our organizational DNA:</p>
-                  <div className="space-y-2.5">
+                  <h2 className="text-lg font-black text-slate-900 mb-2">Our Non-Negotiable Principles</h2>
+                  <p className="text-[11px] text-slate-600 mb-2.5">Every action and field intervention is anchored by five core values that define our organizational DNA:</p>
+                  <div className="space-y-2">
                     {[
                       {icon:"❤️",c:"border-orange-500",t:"Compassion & Respect",d:"Everyone is treated with dignity, recognizing their inherent worth and lifelong potential. Every rescued child receives trauma-informed care from the first moment of contact."},
                       {icon:"💪",c:"border-emerald-500",t:"Empowerment",d:"We empower children, parents, and neighborhoods to build independent, fearless futures through education, vocational training, and self-help group formation."},
@@ -435,32 +435,32 @@ export function App() {
                       {icon:"🤝",c:"border-purple-500",t:"Collaboration & Partnership",d:"Seamless coordination with Police, CWC, JJB, Railway authorities, DCPU, and grassroots NGOs to maximize rescue coverage and legal compliance."},
                       {icon:"📢",c:"border-amber-500",t:"Advocacy & Policy Influence",d:"Championing systemic improvements and law enforcement compliance for child protection. We push for policy reforms at district and state levels."},
                     ].map((v,i)=>(
-                      <div key={i} className={`p-3 bg-slate-50 border-l-3 ${v.c} rounded`} style={{borderLeftWidth:"3px"}}>
+                      <div key={i} className={`p-2.5 bg-slate-50 border-l-3 ${v.c} rounded`} style={{borderLeftWidth:"3px"}}>
                         <div className="text-xs font-bold text-slate-900 mb-0.5">{v.icon} {v.t}</div>
                         <div className="text-[10.5px] text-slate-600 leading-relaxed">{v.d}</div>
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="bg-orange-50 p-3 rounded text-[10px] text-orange-900 border border-orange-200">
+                <div className="bg-orange-50 p-2.5 rounded text-[10.5px] text-orange-950 font-medium border border-orange-200 mt-2">
                   <strong>Commitment:</strong> 100% of staff and field workers have signed our zero-tolerance Child Protection Policy before engaging with any vulnerable minor.
                 </div>
               </div>
-              <PageFooter left="Azad Zindagi Foundation" right="Page 05"/>
+              <PageFooter left="Azad Zindagi Foundation" right="Page 06"/>
             </div>
           </FlipPage>
 
-          {/* ══════════════════ PAGE 6 — LEGAL STANDING ══════════════════ */}
-          <FlipPage className="p-7 page-left">
+          {/* ══════════════════ PAGE 7 — LEGAL STANDING ══════════════════ */}
+          <FlipPage className="p-7 page-right text-slate-900">
             <div className="flex flex-col h-full">
               <PageHeader left="Corporate Governance" right="Legal Standing"/>
               <div className="flex-1 flex flex-col justify-between py-3">
                 <div>
-                  <h2 className="text-lg font-bold text-slate-900 mb-2">Statutory Credibility & Registrations</h2>
-                  <p className="text-[11px] text-slate-700 mb-3">
+                  <h2 className="text-lg font-black text-slate-900 mb-2">Statutory Credibility & Registrations</h2>
+                  <p className="text-[11px] text-slate-700 mb-2.5">
                     Azad Zindagi Foundation is incorporated under <strong>Section 8 of the Companies Act, 2013</strong> as a non-profit company with limited liability, registered with the Ministry of Corporate Affairs, Government of India.
                   </p>
-                  <table className="w-full text-[10.5px] border border-slate-200 mb-3">
+                  <table className="w-full text-[10.5px] border border-slate-200 mb-2.5">
                     <tbody>
                       {[
                         ["Legal Entity","Azad Zindagi Foundation","font-bold text-slate-900"],
@@ -480,19 +480,19 @@ export function App() {
                   </table>
                 </div>
                 <div>
-                  <p className="text-[10.5px] text-slate-600 leading-relaxed mb-3">
+                  <p className="text-[10.5px] text-slate-600 leading-relaxed mb-2">
                     The foundation operates under strict regulatory compliance including annual statutory auditing by certified independent Chartered Accountant firms, and maintains transparent financial reporting accessible to all donors and CSR partners.
                   </p>
-                  <div className="bg-emerald-50 p-3 rounded text-[10px] text-emerald-900 border border-emerald-200">
+                  <div className="bg-emerald-50 p-2.5 rounded text-[10.5px] text-emerald-950 font-medium border border-emerald-200">
                     <strong>Continuity Note:</strong> While formally registered in October 2025, our field team and grassroots rescue networks have operated seamlessly since 2019, building deep trust with police stations, railway authorities, and local communities.
                   </div>
                 </div>
               </div>
-              <PageFooter left="Annual Dossier 2025–26" right="Page 06"/>
+              <PageFooter left="Annual Dossier 2025–26" right="Page 07"/>
             </div>
           </FlipPage>
 
-          {/* ══════════════════ PAGE 7 — GOVERNANCE ══════════════════ */}
+          {/* ══════════════════ PAGE 8 — GOVERNANCE FRAMEWORK ══════════════════ */}
           <FlipPage className="p-7 page-right">
             <div className="flex flex-col h-full">
               <PageHeader left="Compliance" right="Governance Framework"/>
