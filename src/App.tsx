@@ -297,12 +297,12 @@ export function App() {
 
             <div className="border-t border-slate-300 pt-3 text-[10px] text-slate-500 font-medium flex justify-between items-center">
               <span>CIN: U88900MH2025NPL458914</span>
-              <span>Official Annual Publication • 2025–2026</span>
+              <span>Page 02</span>
             </div>
           </FlipPage>
 
           {/* ══════════════════ PAGE 3 — FOREWORD ══════════════════ */}
-          <FlipPage className="p-8 page-left text-slate-900">
+          <FlipPage className="p-8 page-right text-slate-900">
             <div className="flex flex-col h-full">
               <PageHeader left="Azad Zindagi Foundation" right="Foreword"/>
               <div className="flex-1 flex flex-col justify-between py-4">
@@ -331,12 +331,12 @@ export function App() {
                   </div>
                 </div>
               </div>
-              <PageFooter left="Annual Dossier 2025–26" right="Page 02"/>
+              <PageFooter left="Annual Dossier 2025–26" right="Page 03"/>
             </div>
           </FlipPage>
 
           {/* ══════════════════ PAGE 4 — TABLE OF CONTENTS ══════════════════ */}
-          <FlipPage className="p-8 page-right text-slate-900">
+          <FlipPage className="p-8 page-left text-slate-900">
             <div className="flex flex-col h-full">
               <PageHeader left="Contents" right="Complete 32-Page Directory"/>
               <div className="flex-1 flex flex-col justify-between py-3">
@@ -346,40 +346,44 @@ export function App() {
                   <div className="space-y-1 text-xs">
                     {[
                       {l:"01",t:"Front Cover — Impact at a Glance",p:0},
-                      {l:"02–03",t:"Foreword & Table of Contents",p:1},
-                      {l:"04–05",t:"Vision, Mission & Core Values",p:3},
-                      {l:"06–07",t:"Section 8 Governance & Legal Standing",p:5},
-                      {l:"08–09",t:"Child Protection Crisis & Azad Response Model",p:7},
-                      {l:"10–11",t:"Program 1: Tracing & Reintegration Operations",p:9},
-                      {l:"12–13",t:"Program 2: Education & Awareness Drives",p:11},
-                      {l:"14–15",t:"Program 3: Educational Sponsorships & POCSO Support",p:13},
-                      {l:"16–17",t:"Program 4: Community Vigilance & Child-Friendly Cities",p:15},
-                      {l:"18–19",t:"Program 5: Advocacy & Institutional Partnerships",p:17},
-                      {l:"20–21",t:"Cumulative Impact Dashboard & Geographic Reach",p:19},
-                      {l:"22–23",t:"Field Case Studies: Rescue & Rehabilitation",p:21},
-                      {l:"24–25",t:"Transit Rescue SOPs & Neighborhood Vigilance",p:23},
-                      {l:"26–27",t:"Photo Archives: Ground Operations",p:25},
-                      {l:"28–29",t:"Board of Directors & Promoters",p:27},
-                      {l:"30–31",t:"Financial Integrity, CSR & Donation Details",p:29},
-                      {l:"32",t:"Back Cover — Contact & Helpline",p:31},
+                      {l:"02",t:"Inside Front Cover — Publication Info",p:1},
+                      {l:"03",t:"Executive Foreword",p:2},
+                      {l:"04",t:"Table of Contents Directory",p:3},
+                      {l:"05",t:"Vision & Mission Statements",p:4},
+                      {l:"06",t:"5 Core Values",p:5},
+                      {l:"07",t:"Section 8 Governance & Legal Standing",p:6},
+                      {l:"08",t:"Governance Standards & Auditing",p:7},
+                      {l:"09",t:"Child Protection Crisis",p:8},
+                      {l:"10",t:"Azad 5-Step Response Model",p:9},
+                      {l:"11–12",t:"Program 1: Tracing & Reintegration",p:10},
+                      {l:"13–14",t:"Program 2: Education & Awareness Drives",p:12},
+                      {l:"15–16",t:"Program 3: Sponsorships & POCSO Support",p:14},
+                      {l:"17–18",t:"Program 4: Community Vigilance",p:16},
+                      {l:"19–20",t:"Program 5: Child-Friendly Communities",p:18},
+                      {l:"21–22",t:"Program 6: Advocacy & Partnerships",p:20},
+                      {l:"23–24",t:"Impact Dashboard & Geographic Reach",p:22},
+                      {l:"25–26",t:"Field Case Studies",p:24},
+                      {l:"27–28",t:"Photo Archives",p:26},
+                      {l:"29–30",t:"Board of Directors & Leadership",p:28},
+                      {l:"31–32",t:"CSR, Donation & Back Cover",p:30},
                     ].map((r,i) => (
-                      <div key={i} className="flex justify-between bg-slate-50 hover:bg-orange-50 p-1.5 rounded cursor-pointer transition-colors border border-slate-100" onClick={()=>goToPage(r.p)}>
+                      <div key={i} className="flex justify-between bg-slate-50 hover:bg-orange-50 p-1 rounded cursor-pointer transition-colors border border-slate-100" onClick={()=>goToPage(r.p)}>
                         <span className="font-medium text-slate-800"><strong className="text-orange-600">{r.l}</strong> {r.t}</span>
                         <span className="text-slate-500 font-mono text-[10px] bg-white px-1.5 py-0.5 rounded border border-slate-200 font-bold">P.{r.l}</span>
                       </div>
                     ))}
                   </div>
                 </div>
-                <div className="bg-slate-100 p-3 rounded text-xs text-slate-700 font-medium border border-slate-200">
-                  <strong>Reading Tip:</strong> Click any row above to jump directly to that section. Use left/right arrow keys or the nav buttons to flip pages.
+                <div className="bg-slate-100 p-2.5 rounded text-xs text-slate-700 font-medium border border-slate-200">
+                  <strong>Reading Tip:</strong> Click any row above to jump directly to that section. Use navigation arrows or click corners to flip spreads cleanly.
                 </div>
               </div>
-              <PageFooter left="Azad Zindagi Foundation" right="Page 03"/>
+              <PageFooter left="Azad Zindagi Foundation" right="Page 04"/>
             </div>
           </FlipPage>
 
           {/* ══════════════════ PAGE 5 — VISION & MISSION ══════════════════ */}
-          <FlipPage className="p-8 page-left text-slate-900">
+          <FlipPage className="p-8 page-right text-slate-900">
             <div className="flex flex-col h-full">
               <PageHeader left="Identity" right="Vision & Mission"/>
               <div className="flex-1 flex flex-col justify-between py-3">
@@ -411,7 +415,7 @@ export function App() {
                   </div>
                 </div>
               </div>
-              <PageFooter left="Annual Dossier 2025–26" right="Page 04"/>
+              <PageFooter left="Annual Dossier 2025–26" right="Page 05"/>
             </div>
           </FlipPage>
 
