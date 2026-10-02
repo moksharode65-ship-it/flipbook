@@ -1,0 +1,10 @@
+Category,Type,Amount (INR),Percentage
+Donations,Income,FILL_IN,FILL_IN
+Grants,Income,FILL_IN,FILL_IN
+CSR Contributions,Income,FILL_IN,FILL_IN
+Interest Income,Income,FILL_IN,FILL_IN
+Total Income,Income,FILL_IN,100%
+Program Expenses,Expenditure,FILL_IN,FILL_IN
+Administrative Costs,Expenditure,FILL_IN,FILL_IN
+Fundraising Costs,Expenditure,FILL_IN,FILL_IN
+Total Expenditure,Expenditure,FILL_IN,100%
