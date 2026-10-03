@@ -206,6 +206,11 @@ export function App() {
             {soundEnabled ? <Volume2 className="w-4 h-4 text-emerald-400"/> : <VolumeX className="w-4 h-4 text-slate-500"/>}
           </Button>
           <Button variant="ghost" size="icon" onClick={toggleFS} className="h-9 w-9 text-slate-300 hover:text-white hover:bg-slate-800" title="Fullscreen"><Maximize2 className="w-4 h-4"/></Button>
+          {currentPage > 0 && (
+            <Button variant="ghost" size="icon" onClick={() => bookRef.current?.close?.()} className="h-9 w-9 text-slate-300 hover:text-white hover:bg-slate-800" title="Close book">
+              <BookOpen className="w-4 h-4"/>
+            </Button>
+          )}
         </div>
       </header>
 
@@ -213,7 +218,7 @@ export function App() {
       <main className="flex-1 flex items-center justify-center p-2 relative overflow-hidden my-auto min-h-[calc(100vh-6.5rem)]">
         <button onClick={prevPage} className="absolute left-2 md:left-6 z-30 w-11 h-11 rounded-full bg-slate-900/80 hover:bg-orange-500 text-white flex items-center justify-center backdrop-blur shadow-xl transition-all border border-slate-700/50" title="Previous"><ChevronLeft className="w-6 h-6"/></button>
 
-        <BookSlider bookRef={bookRef} width={440} height={622} onFlip={handleFlip}>
+        <BookSlider bookRef={bookRef} width={440} height={622} onFlip={handleFlip} flipDirection="bottom" startClosed={true}>
 
           {/* ══════════════════ PAGE 1 — FRONT COVER (3D Hardcover) ══════════════════ */}
           <FlipPage className="p-0 bg-slate-900 text-white border border-slate-800 hardcover-spine-left cover-bevel shadow-2xl">

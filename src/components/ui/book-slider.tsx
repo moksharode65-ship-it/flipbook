@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useEffect, useRef } from 'react';
 // @ts-ignore - react-pageflip default export handling in bundlers
 import PageFlipModule from "react-pageflip";
 
@@ -37,6 +37,8 @@ interface BookSliderProps {
   onFlip?: (e: { data: number }) => void;
   className?: string;
   bookRef?: React.RefObject<any>;
+  flipDirection?: 'bottom' | 'top' | 'left' | 'right';
+  startClosed?: boolean;
 }
 
 export function BookSlider({
@@ -46,11 +48,59 @@ export function BookSlider({
   onFlip,
   className = '',
   bookRef,
+  flipDirection = 'bottom',
+  startClosed = true,
 }: BookSliderProps) {
+  const internalRef = useRef<any>(null);
+  const pageFlipRef = useRef<any>(null);
+  const isOpenedRef = useRef(!startClosed);
+
+  const mergedRef = bookRef || internalRef;
+
+  useEffect(() => {
+    if (mergedRef?.current) {
+      const book = mergedRef.current.pageFlip ? mergedRef.current.pageFlip() : mergedRef.current;
+      pageFlipRef.current = book;
+    }
+  }, [mergedRef]);
+
+  const openBook = () => {
+    if (pageFlipRef.current && !isOpenedRef.current) {
+      pageFlipRef.current.flip(1);
+      isOpenedRef.current = true;
+    }
+  };
+
+  const closeBook = () => {
+    if (pageFlipRef.current && isOpenedRef.current) {
+      pageFlipRef.current.flip(0);
+      isOpenedRef.current = false;
+    }
+  };
+
+  const toggleBook = () => {
+    if (isOpenedRef.current) {
+      closeBook();
+    } else {
+      openBook();
+    }
+  };
+
+  // Expose methods on ref
+  if (bookRef && typeof bookRef === 'object') {
+    (bookRef as any).current = {
+      ...mergedRef.current,
+      open: openBook,
+      close: closeBook,
+      toggle: toggleBook,
+      isOpened: () => isOpenedRef.current,
+    };
+  }
+
   return (
     <div className={`flipbook-viewport w-full flex items-center justify-center py-2 ${className}`}>
       <HTMLFlipBook
-        ref={bookRef}
+        ref={mergedRef}
         width={width}
         height={height}
         minWidth={300}
@@ -61,7 +111,7 @@ export function BookSlider({
         drawShadow={true}
         showCover={true}
         usePortrait={false}
-        startPage={0}
+        startPage={startClosed ? 0 : 1}
         autoSize={true}
         flippingTime={900}
         clickToFlip={true}
@@ -72,6 +122,8 @@ export function BookSlider({
         onFlip={onFlip}
         className="azad-flipbook shadow-2xl rounded-sm"
         style={{ margin: "0 auto", display: "block" }}
+        // Flip direction for page corners
+        mobileScrollSupport={true}
       >
         {children}
       </HTMLFlipBook>
